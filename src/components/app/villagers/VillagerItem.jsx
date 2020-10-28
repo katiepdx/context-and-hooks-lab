@@ -1,16 +1,18 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-const VillagerItem = props => {
+const VillagerItem = ({ name, image }) => {
   return (
-    <div>
-      Villager item component
-    </div>
+    <>
+      <img src={image} alt={name} />
+      <figcaption>{name}</figcaption>
+    </>
   )
 }
 
 VillagerItem.propTypes = {
-
+  name: PropTypes.string.isRequired,
+  image: PropTypes.string.isRequired
 }
 
 export default VillagerItem

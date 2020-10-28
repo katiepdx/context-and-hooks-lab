@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-const VillagersList = props => {
+const VillagersList = ({ props }) => {
   return (
     <div>
       Villager List Component

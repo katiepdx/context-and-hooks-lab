@@ -1,12 +1,13 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import styles from './VillagerItem.css'
 
 const VillagerItem = ({ name, image }) => {
   return (
-    <>
-      <img src={image} alt={name} />
+    <div className={styles.villagerItem}>
+      <img src={image} alt={name} className={styles.villagerImg}/>
       <figcaption>{name}</figcaption>
-    </>
+    </div>
   )
 }
 

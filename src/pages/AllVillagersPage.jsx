@@ -2,18 +2,17 @@
 // pagination prev and next button
 
 import React from 'react'
-import PropTypes from 'prop-types'
+import VillagersList from '../components/app/villagers/VillagersList/VillagersList'
 
-const AllVillagersPage = props => {
+const AllVillagersPage = () => {
   return (
     <div>
-      AllVillagersPage
+      <h1>Animal Crossing Villagers</h1>
+      <VillagersList />
     </div>
   )
 }
 
-AllVillagersPage.propTypes = {
 
-}
 
 export default AllVillagersPage

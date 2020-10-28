@@ -2,12 +2,17 @@
 
 exports[`Test VillagerItem Component tests that the VillagerItem renders an image of a villager with the name underneath 1`] = `
 <DocumentFragment>
-  <img
-    alt="Admiral"
-    src="https://vignette.wikia.nocookie.net/animalcrossing/images/e/ed/Admiral_NH.png/revision/latest?cb=20200802081138"
-  />
-  <figcaption>
-    Admiral
-  </figcaption>
+  <div
+    class="villagerItem"
+  >
+    <img
+      alt="Admiral"
+      class="villagerImg"
+      src="https://vignette.wikia.nocookie.net/animalcrossing/images/e/ed/Admiral_NH.png/revision/latest?cb=20200802081138"
+    />
+    <figcaption>
+      Admiral
+    </figcaption>
+  </div>
 </DocumentFragment>
 `;

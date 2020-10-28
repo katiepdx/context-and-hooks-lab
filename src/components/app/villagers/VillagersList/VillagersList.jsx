@@ -5,8 +5,9 @@ import { Link } from 'react-router-dom'
 import VillagerItem from '../villagerItem/VillagerItem'
 import styles from './VillagerList.css'
 
-const VillagersList = () => {
-  const { loading, characters } = useAllCharacters()
+const VillagersList = ({ pageCount }) => {
+  // pass pageCount to useAllCharacters so it knows which page in the api fetch
+  const { loading, characters } = useAllCharacters(pageCount)
 
   if (loading) return <h1>Still loading the AC Villagers List...</h1>
 
@@ -29,5 +30,8 @@ const VillagersList = () => {
   )
 }
 
+VillagersList.propTypes = {
+  pageCount: PropTypes.number
+}
 
 export default VillagersList

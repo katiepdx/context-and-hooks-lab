@@ -1,7 +1,7 @@
 // animal crossing api fetch
 
-export const getAllCharacters = async () => {
-  const res = await fetch('https://cors-anywhere.herokuapp.com/https://ac-vill.herokuapp.com/villagers', {
+export const getAllCharacters = async (pageCount = 1) => {
+  const res = await fetch(`https://cors-anywhere.herokuapp.com/https://ac-vill.herokuapp.com/villagers/?page=${pageCount}`, {
     header: {
       Origin: null
     }

@@ -22,7 +22,7 @@ const VillagersList = () => {
 
   return (
     <>
-      <div className={styles.allVillagers}>
+      <div className={styles.allVillagers} data-testid="ac-characters">
         {VillagersListEls}
       </div>
     </>

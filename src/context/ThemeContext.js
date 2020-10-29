@@ -5,7 +5,7 @@ import React, { useState } from 'react'
 export const ThemeContext = React.createContext();
 
 const themes = {
-  lightTheme: '#000000',
+  lightTheme: '#FFFFFF',
   darkTheme: '#FFC0CB'
 }
 
@@ -18,8 +18,6 @@ export const ThemeProvider = ({ children }) => {
       if (themeType === themes.darkTheme) return (themes.lightTheme)
       else return (themes.darkTheme)
     })
-
-    console.log(themeType, 'THEME TYPE FROM TOGGLE THEME HOOK')
   }
 
   return (

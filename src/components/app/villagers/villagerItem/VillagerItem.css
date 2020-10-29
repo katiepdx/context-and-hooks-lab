@@ -1,0 +1,12 @@
+.villagerImg {
+  height: 200px;
+  width: 200px;
+}
+
+.villagerItem {
+ max-width: max-content;
+}
+
+.villagerImg:hover {
+  border: 2px solid tomato;
+}
